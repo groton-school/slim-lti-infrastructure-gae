@@ -1,0 +1,35 @@
+{
+  "name": "groton-school/slim-lti-infrastructure-gae",
+  "authors": [
+    {
+      "name": "Seth Battis",
+      "email": "sbattis@groton.org"
+    }
+  ],
+  "license": "GPL-3.0",
+  "require": {
+    "google/cloud-firestore": "^1.48",
+    "groton-school/slim-lti-shim": "dev-main",
+    "packbackbooks/lti-1p3-tool": "^6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "GrotonSchool\\Slim\\LTI\\GAE\\": "src/"
+    }
+  },
+  "scripts": {
+    "release": "conventional-changelog --commit"
+  },
+  "require-dev": {
+    "franzl/studio": "^0.16.0",
+    "marcocesarato/php-conventional-changelog": "^1.17"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "franzl/studio": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
