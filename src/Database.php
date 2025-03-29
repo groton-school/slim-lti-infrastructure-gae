@@ -67,6 +67,13 @@ class Database implements DatabaseInterface
         if (!$registration) {
             return null;
         }
+        /*
+         * FIXME: how do I know what deployment IDs are out there?
+         *   Per https://github.com/packbackbooks/lti-1-3-php-library/issues/69#issuecomment-1713981975
+         *   this is worth paying attention to, but it's not clear where in
+         *   the workflow the deployment ID was originally provided. Right now
+         *   I manually added it to the database.
+         */
         if ($registration->hasDeployment($deploymentId)) {
             return LtiDeployment::new($deploymentId);
         }
