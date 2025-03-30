@@ -7,11 +7,13 @@ namespace GrotonSchool\Slim\LTI\Infrastructure\GAE;
 use Exception;
 use Packback\Lti1p3\Interfaces\ICache;
 use Google\Cloud\Firestore\FirestoreClient;
+use GrotonSchool\Slim\LTI\Domain\ConsumerConfigurationInterface;
+use GrotonSchool\Slim\LTI\Infrastructure\CacheInterface;
 
 /**
  * @see https://github.com/packbackbooks/lti-1-3-php-library/wiki/Laravel-Implementation-Guide#cache Working from Packback's wiki example
  */
-class Cache implements ICache
+class Cache implements ICache, CacheInterface
 {
     public const COLLECTION_PATH = 'cache';
 
@@ -114,5 +116,45 @@ class Cache implements ICache
         for ($i = 0; $i < $result->size(); $i++) {
             $this->firestore->document($result->rows()[$i]->name())->delete();
         }
+    }
+
+    public function cacheConsumerConfiguration(ConsumerConfigurationInterface $config): string
+    {
+        $document = $this->firestore
+            ->collection(self::COLLECTION_PATH)
+            ->newDocument();
+        $document->set([
+            'configuration' =>  $config,
+        ]);
+        return $document->id();
+    }
+
+    public function getConsumerConfiguration(string $identifier): ConsumerConfigurationInterface
+    {
+        $$document = $this->firestore
+            ->collection(self::COLLECTION_PATH)->document($identifier);
+        $config = $document->data()['configuration'];
+        $document->delete();
+        return $config;
+    }
+
+    public function cacheRegistrationToken(string $registration_token): string
+    {
+        $document = $this->firestore
+            ->collection(self::COLLECTION_PATH)
+            ->newDocument();
+        $document->set([
+            'registration_token' => $registration_token
+        ]);
+        return $document->id();
+    }
+
+    public function getRegistrationToken(string $identifier): string
+    {
+        $$document = $this->firestore
+            ->collection(self::COLLECTION_PATH)->document($identifier);
+        $config = $document->data()['registration_token'];
+        $document->delete();
+        return $config;
     }
 }
