@@ -7,7 +7,6 @@ namespace GrotonSchool\Slim\LTI\Infrastructure\GAE;
 use Exception;
 use Google\Cloud\Firestore\FirestoreClient;
 use GrotonSchool\Slim\LTI\Infrastructure\CacheInterface;
-use JsonSerializable;
 
 /**
  * @see https://github.com/packbackbooks/lti-1-3-php-library/wiki/Laravel-Implementation-Guide#cache Working from Packback's wiki example
@@ -118,7 +117,7 @@ class Cache implements CacheInterface
     }
 
     public function cacheRegistrationConfiguration(
-        JsonSerializable $config,
+        array $config,
         string $registration_token
     ): string {
         $document = $this->firestore->collection(self::COLLECTION_PATH)->newDocument();
