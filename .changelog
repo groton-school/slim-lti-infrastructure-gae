@@ -1,0 +1,7 @@
+<?php
+
+$packageName = 'slim-lti-infrastructure-gae';
+return [
+    'tagPrefix' => "$packageName/",
+    'releaseCommitMessageFormat' => "chore($packageName): release v{{currentTag}}",
+];
