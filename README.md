@@ -1,16 +1,11 @@
 # groton-school/slim-lti-gae-shim
 
+Shim to implement packbackbooks/lti-1p3-tool on Slim running on Google App Engine with data in Firestore
+
 [![Latest Version](https://img.shields.io/packagist/v/groton-school/slim-lti-gae-shim.svg)](https://packagist.org/packages/groton-school/slim-lti-gae-shim)
 
+See [groton-school/slim-lti-gae-skeleton](https://github.com/groton-school/slim-lti-gae-skeleton) for use. Or just use that skeleton to create your poject:
+
 ```sh
-composer create-project slim/slim-skeleton [my-app-name]
-cd [my-app-name]
-composer require groton-school/slim-lti-gae-shim php-di/php-di
-cp vendor/groton-school/slim-gae-shim/.gcloudignore .
-cp vendor/groton-school/slim-gae-shim/app.yaml .
-cp -R vendor/groton-school/slim-gae-shim/bin .
-cp vendor/groton-school/slim-gae-shim/package.json .
-cp vendor/groton-school/slim-gae-shim/php.ini .
-npm install
-node bin/deploy.js
+composer create-project --stability dev groton-school/slim-lti-gae-skeleton [my-app-name]
 ```
