@@ -1,36 +1,37 @@
 {
-  "name": "groton-school/slim-lti-infrastructure-gae",
-  "description": "Shim to implement packbackbooks/lti-1p3-tool on Slim running on Google App Engine with data in Firestore",
-  "authors": [
-    {
-      "name": "Seth Battis",
-      "email": "sbattis@groton.org"
-    }
-  ],
-  "license": "GPL-3.0",
-  "require": {
-    "google/cloud-firestore": "^1.48",
-    "groton-school/slim-lti-shim": "dev-main",
-    "packbackbooks/lti-1p3-tool": "^6.2"
-  },
-  "autoload": {
-    "psr-4": {
-      "GrotonSchool\\Slim\\LTI\\Infrastructure\\GAE\\": "src/"
-    }
-  },
-  "scripts": {
-    "release": "conventional-changelog --commit"
-  },
-  "require-dev": {
-    "franzl/studio": "^0.16.0",
-    "marcocesarato/php-conventional-changelog": "^1.17"
-  },
-  "config": {
-    "sort-packages": true,
-    "allow-plugins": {
-      "franzl/studio": true
-    }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "name": "groton-school/slim-lti-infrastructure-gae",
+    "description": "Shim to implement packbackbooks/lti-1p3-tool on Slim running on Google App Engine with data in Firestore",
+    "authors": [
+        {
+            "name": "Seth Battis",
+            "email": "sbattis@groton.org"
+        }
+    ],
+    "license": "GPL-3.0",
+    "require": {
+        "google/cloud-firestore": "^1.48",
+        "groton-school/slim-lti-shim": "dev-main",
+        "packbackbooks/lti-1p3-tool": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "GrotonSchool\\Slim\\LTI\\Infrastructure\\GAE\\": "src/"
+        }
+    },
+    "scripts": {
+        "release": "conventional-changelog --commit"
+    },
+    "require-dev": {
+        "franzl/studio": "^0.16.0",
+        "marcocesarato/php-conventional-changelog": "^1.17"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "franzl/studio": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version": "1.0.0"
 }
