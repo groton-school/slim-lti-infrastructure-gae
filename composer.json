@@ -12,7 +12,7 @@
   "require": {
     "google/cloud-firestore": "^1.48",
     "groton-school/slim-lti-shim": "^1.0",
-    "packbackbooks/lti-1p3-tool": "^6.2"
+    "packbackbooks/lti-1p3-tool": "^6.3"
   },
   "autoload": {
     "psr-4": {
