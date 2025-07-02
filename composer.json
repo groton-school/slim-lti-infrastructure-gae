@@ -24,6 +24,7 @@
   },
   "require-dev": {
     "franzl/studio": "^0.16.0",
+    "friendsofphp/php-cs-fixer": "^3.76",
     "marcocesarato/php-conventional-changelog": "^1.17"
   },
   "config": {
