@@ -11,7 +11,7 @@
   "license": "GPL-3.0",
   "require": {
     "google/cloud-firestore": "^1.48",
-    "groton-school/slim-lti-shim": "dev-feat/oidc-non-chips",
+    "groton-school/slim-lti-shim": "dev-feat/oidc-without-chips",
     "packbackbooks/lti-1p3-tool": "^6.3"
   },
   "autoload": {
@@ -23,14 +23,10 @@
     "release": "conventional-changelog --commit"
   },
   "require-dev": {
-    "franzl/studio": "^0.16.0",
     "friendsofphp/php-cs-fixer": "^3.76",
     "marcocesarato/php-conventional-changelog": "^1.17"
   },
   "config": {
-    "sort-packages": true,
-    "allow-plugins": {
-      "franzl/studio": true
-    }
+    "sort-packages": true
   }
 }
