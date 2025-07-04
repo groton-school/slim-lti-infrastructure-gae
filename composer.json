@@ -11,7 +11,7 @@
   "license": "GPL-3.0",
   "require": {
     "google/cloud-firestore": "^1.48",
-    "groton-school/slim-lti-shim": "dev-feat/oidc-without-chips",
+    "groton-school/slim-lti-shim": "dev-feat/third-party-cookies",
     "packbackbooks/lti-1p3-tool": "^6.3"
   },
   "autoload": {

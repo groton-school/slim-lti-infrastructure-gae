@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44a9dd828758f0ab5425c92bfadfdaca",
+    "content-hash": "af42b699cd736f03d35ce0a2349200e2",
     "packages": [
         {
             "name": "brick/math",
@@ -612,22 +612,21 @@
         },
         {
             "name": "groton-school/slim-lti-shim",
-            "version": "dev-feat/oidc-without-chips",
+            "version": "dev-feat/third-party-cookies",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/lti.slim-lti-shim.git",
-                "reference": "ce4523ae076d567faebb515742ce996f6547e293"
+                "reference": "80ff1cbdbfb1c4e90a3b36063f9ca9752816d4f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-shim/zipball/ce4523ae076d567faebb515742ce996f6547e293",
-                "reference": "ce4523ae076d567faebb515742ce996f6547e293",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-shim/zipball/80ff1cbdbfb1c4e90a3b36063f9ca9752816d4f1",
+                "reference": "80ff1cbdbfb1c4e90a3b36063f9ca9752816d4f1",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-openssl": "*",
-                "firebase/php-jwt": "^6.11",
                 "groton-school/slim-action": "^1.0",
                 "packbackbooks/lti-1p3-tool": "^6.3",
                 "php-di/php-di": "^6.0",
@@ -636,7 +635,6 @@
                 "slim/slim": "^4.14"
             },
             "require-dev": {
-                "franzl/studio": "^0.16.0",
                 "friendsofphp/php-cs-fixer": "^3.76",
                 "marcocesarato/php-conventional-changelog": "^1.17"
             },
@@ -659,9 +657,9 @@
             "description": "Shim to use packbackbooks/lti-1p3-tool in a Slim Skeleton app",
             "support": {
                 "issues": "https://github.com/groton-school/lti.slim-lti-shim/issues",
-                "source": "https://github.com/groton-school/lti.slim-lti-shim/tree/feat/oidc-non-chips"
+                "source": "https://github.com/groton-school/lti.slim-lti-shim/tree/v1.2.0"
             },
-            "time": "2025-07-02T23:38:55+00:00"
+            "time": "2025-07-03T14:30:04+00:00"
         },
         {
             "name": "grpc/grpc",
