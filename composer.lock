@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "72ee566522289a52bc9f3dca829de44d",
+    "content-hash": "1276f1da199b9d1dacad41d3d287af16",
     "packages": [
         {
             "name": "brick/math",
@@ -564,11 +564,11 @@
         },
         {
             "name": "groton-school/slim-action",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "dist": {
                 "type": "path",
                 "url": "../../packages/slim-action",
-                "reference": "2d7dd8db271019fdb781c229ff7e83fe5038bc06"
+                "reference": "bf3f4ef64058edbdadcf040436a5306df7ccd54d"
             },
             "require": {
                 "ext-json": "*",
@@ -579,6 +579,7 @@
             },
             "require-dev": {
                 "franzl/studio": "^0.16.0",
+                "friendsofphp/php-cs-fixer": "^3.76",
                 "marcocesarato/php-conventional-changelog": "^1.17"
             },
             "type": "library",
@@ -589,7 +590,7 @@
             },
             "scripts": {
                 "release": [
-                    "conventional-changelog --commit"
+                    "conventional-changelog --commit --merged"
                 ]
             },
             "license": [
@@ -608,16 +609,16 @@
         },
         {
             "name": "groton-school/slim-lti-shim",
-            "version": "1.1.0",
+            "version": "2.0.0",
             "dist": {
                 "type": "path",
                 "url": "../../packages/slim-lti-shim",
-                "reference": "9676c39c22ebe1b090234a79979cf8aea198043c"
+                "reference": "54ff522704472dec476d2aabd2b1b76979d00037"
             },
             "require": {
                 "ext-json": "*",
                 "ext-openssl": "*",
-                "groton-school/slim-action": "^1.0",
+                "groton-school/slim-action": "^2.0",
                 "packbackbooks/lti-1p3-tool": "^6.3",
                 "php-di/php-di": "^6.0",
                 "slim/http": "^1.4",
@@ -625,7 +626,7 @@
                 "slim/slim": "^4.14"
             },
             "require-dev": {
-                "franzl/studio": "^0.16.0",
+                "friendsofphp/php-cs-fixer": "^3.76",
                 "marcocesarato/php-conventional-changelog": "^1.17"
             },
             "type": "library",

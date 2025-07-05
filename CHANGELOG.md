@@ -1,3 +1,14 @@
+<!--- BEGIN HEADER -->
+# Changelog
+
+All notable changes to this project will be documented in this file.
+<!--- END HEADER -->
+
+## [1.0.2](https://github.com/groton-school/lti.slim-lti-infrastructure-gae/compare/v1.0.1...v1.0.2) (2025-07-05)
+
+
+---
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
