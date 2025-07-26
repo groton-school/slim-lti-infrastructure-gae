@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b029919ac3808a9e20352ce4be20e2b6",
+    "content-hash": "da0d97da1e0d28ef6b7e9f40effbb00a",
     "packages": [
         {
             "name": "brick/math",
@@ -564,11 +564,17 @@
         },
         {
             "name": "groton-school/slim-action",
-            "version": "2.0.0",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/groton-school/lti.slim-action.git",
+                "reference": "05654b1f88ce83799054c6310267fcb565b255cb"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../packages/slim-action",
-                "reference": "bf3f4ef64058edbdadcf040436a5306df7ccd54d"
+                "type": "zip",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-action/zipball/05654b1f88ce83799054c6310267fcb565b255cb",
+                "reference": "05654b1f88ce83799054c6310267fcb565b255cb",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -588,11 +594,7 @@
                     "GrotonSchool\\Slim\\Actions\\": "src/"
                 }
             },
-            "scripts": {
-                "release": [
-                    "conventional-changelog --commit --merged"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0"
             ],
@@ -603,22 +605,30 @@
                 }
             ],
             "description": "Convenience wrapper for Slim framework actions",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/groton-school/lti.slim-action/issues",
+                "source": "https://github.com/groton-school/lti.slim-action/tree/v2.0.1"
+            },
+            "time": "2025-07-26T22:59:20+00:00"
         },
         {
             "name": "groton-school/slim-lti-shim",
-            "version": "2.0.2",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/groton-school/lti.slim-lti-shim.git",
+                "reference": "448504bd9de689d83aa47383f102c13b6743907d"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../packages/slim-lti-shim",
-                "reference": "fa6e976fb913e87b40aa9a44c6c208b4c9ee1b5d"
+                "type": "zip",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-shim/zipball/448504bd9de689d83aa47383f102c13b6743907d",
+                "reference": "448504bd9de689d83aa47383f102c13b6743907d",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-openssl": "*",
-                "groton-school/slim-action": "^2.0",
+                "groton-school/slim-action": "^2.0.1",
                 "packbackbooks/lti-1p3-tool": "^6.3",
                 "php-di/php-di": "^6.0",
                 "slim/http": "^1.4",
@@ -635,11 +645,7 @@
                     "GrotonSchool\\Slim\\LTI\\": "src/"
                 }
             },
-            "scripts": {
-                "release": [
-                    "conventional-changelog --commit"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0"
             ],
@@ -650,9 +656,11 @@
                 }
             ],
             "description": "Shim to use packbackbooks/lti-1p3-tool in a Slim Skeleton app",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/groton-school/lti.slim-lti-shim/issues",
+                "source": "https://github.com/groton-school/lti.slim-lti-shim/tree/v2.0.3"
+            },
+            "time": "2025-07-26T23:02:21+00:00"
         },
         {
             "name": "grpc/grpc",
@@ -3098,75 +3106,6 @@
             "time": "2024-08-06T10:04:20+00:00"
         },
         {
-            "name": "franzl/studio",
-            "version": "0.16.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/franzliedke/studio.git",
-                "reference": "1255eb4017954cbcd32da2a1381d2bf4dd697acc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/franzliedke/studio/zipball/1255eb4017954cbcd32da2a1381d2bf4dd697acc",
-                "reference": "1255eb4017954cbcd32da2a1381d2bf4dd697acc",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0 || ^2.0",
-                "php": ">=7.0",
-                "symfony/console": "^2.7 || ^3.0 || ^4.0 || ^5.0 || ^6.0",
-                "symfony/filesystem": "^2.5 || ^3.0 || ^4.0 || ^5.0 || ^6.0",
-                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0 || ^6.0"
-            },
-            "replace": {
-                "franzliedke/studio": "self.version"
-            },
-            "require-dev": {
-                "composer/composer": "^2.4.2",
-                "phpspec/phpspec": "^6.3 || ^7.0"
-            },
-            "bin": [
-                "bin/studio"
-            ],
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Studio\\Composer\\StudioPlugin",
-                "branch-alias": {
-                    "dev-master": "0.11.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Studio\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Develop your Composer libraries with style",
-            "keywords": [
-                "composer",
-                "development",
-                "workflow"
-            ],
-            "support": {
-                "issues": "https://github.com/franzliedke/studio/issues",
-                "source": "https://github.com/franzliedke/studio/tree/0.16.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/franzliedke",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/franzl/studio",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2022-10-12T10:32:13+00:00"
-        },
-        {
             "name": "friendsofphp/php-cs-fixer",
             "version": "v3.84.0",
             "source": {
@@ -3994,47 +3933,47 @@
         },
         {
             "name": "symfony/console",
-            "version": "v6.4.23",
+            "version": "v7.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "9056771b8eca08d026cd3280deeec3cfd99c4d93"
+                "reference": "9e27aecde8f506ba0fd1d9989620c04a87697101"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/9056771b8eca08d026cd3280deeec3cfd99c4d93",
-                "reference": "9056771b8eca08d026cd3280deeec3cfd99c4d93",
+                "url": "https://api.github.com/repos/symfony/console/zipball/9e27aecde8f506ba0fd1d9989620c04a87697101",
+                "reference": "9e27aecde8f506ba0fd1d9989620c04a87697101",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "symfony/deprecation-contracts": "^2.5|^3",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/service-contracts": "^2.5|^3",
-                "symfony/string": "^5.4|^6.0|^7.0"
+                "symfony/string": "^7.2"
             },
             "conflict": {
-                "symfony/dependency-injection": "<5.4",
-                "symfony/dotenv": "<5.4",
-                "symfony/event-dispatcher": "<5.4",
-                "symfony/lock": "<5.4",
-                "symfony/process": "<5.4"
+                "symfony/dependency-injection": "<6.4",
+                "symfony/dotenv": "<6.4",
+                "symfony/event-dispatcher": "<6.4",
+                "symfony/lock": "<6.4",
+                "symfony/process": "<6.4"
             },
             "provide": {
                 "psr/log-implementation": "1.0|2.0|3.0"
             },
             "require-dev": {
                 "psr/log": "^1|^2|^3",
-                "symfony/config": "^5.4|^6.0|^7.0",
-                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
-                "symfony/event-dispatcher": "^5.4|^6.0|^7.0",
+                "symfony/config": "^6.4|^7.0",
+                "symfony/dependency-injection": "^6.4|^7.0",
+                "symfony/event-dispatcher": "^6.4|^7.0",
                 "symfony/http-foundation": "^6.4|^7.0",
                 "symfony/http-kernel": "^6.4|^7.0",
-                "symfony/lock": "^5.4|^6.0|^7.0",
-                "symfony/messenger": "^5.4|^6.0|^7.0",
-                "symfony/process": "^5.4|^6.0|^7.0",
-                "symfony/stopwatch": "^5.4|^6.0|^7.0",
-                "symfony/var-dumper": "^5.4|^6.0|^7.0"
+                "symfony/lock": "^6.4|^7.0",
+                "symfony/messenger": "^6.4|^7.0",
+                "symfony/process": "^6.4|^7.0",
+                "symfony/stopwatch": "^6.4|^7.0",
+                "symfony/var-dumper": "^6.4|^7.0"
             },
             "type": "library",
             "autoload": {
@@ -4068,7 +4007,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v6.4.23"
+                "source": "https://github.com/symfony/console/tree/v7.3.1"
             },
             "funding": [
                 {
@@ -4084,7 +4023,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-27T19:37:22+00:00"
+            "time": "2025-06-27T19:55:54+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -4244,25 +4183,25 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v6.4.13",
+            "version": "v7.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "4856c9cf585d5a0313d8d35afd681a526f038dd3"
+                "reference": "b8dce482de9d7c9fe2891155035a7248ab5c7fdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/4856c9cf585d5a0313d8d35afd681a526f038dd3",
-                "reference": "4856c9cf585d5a0313d8d35afd681a526f038dd3",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/b8dce482de9d7c9fe2891155035a7248ab5c7fdb",
+                "reference": "b8dce482de9d7c9fe2891155035a7248ab5c7fdb",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-mbstring": "~1.8"
             },
             "require-dev": {
-                "symfony/process": "^5.4|^6.4|^7.0"
+                "symfony/process": "^6.4|^7.0"
             },
             "type": "library",
             "autoload": {
@@ -4290,7 +4229,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v6.4.13"
+                "source": "https://github.com/symfony/filesystem/tree/v7.3.0"
             },
             "funding": [
                 {
@@ -4306,7 +4245,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-10-25T15:07:50+00:00"
+            "time": "2024-10-25T15:15:23+00:00"
         },
         {
             "name": "symfony/finder",
@@ -4916,20 +4855,20 @@
         },
         {
             "name": "symfony/process",
-            "version": "v6.4.20",
+            "version": "v7.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "e2a61c16af36c9a07e5c9906498b73e091949a20"
+                "reference": "40c295f2deb408d5e9d2d32b8ba1dd61e36f05af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/e2a61c16af36c9a07e5c9906498b73e091949a20",
-                "reference": "e2a61c16af36c9a07e5c9906498b73e091949a20",
+                "url": "https://api.github.com/repos/symfony/process/zipball/40c295f2deb408d5e9d2d32b8ba1dd61e36f05af",
+                "reference": "40c295f2deb408d5e9d2d32b8ba1dd61e36f05af",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "type": "library",
             "autoload": {
@@ -4957,7 +4896,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v6.4.20"
+                "source": "https://github.com/symfony/process/tree/v7.3.0"
             },
             "funding": [
                 {
@@ -4973,7 +4912,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-10T17:11:00+00:00"
+            "time": "2025-04-17T09:11:12+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -5209,9 +5148,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {},
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
