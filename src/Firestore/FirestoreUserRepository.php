@@ -6,6 +6,8 @@ namespace GrotonSchool\Slim\LTI\Infrastructure\GAE\Firestore;
 
 use Exception;
 use Google\Cloud\Firestore\FirestoreClient;
+use GrotonSchool\Slim\LTI\Domain\User\User;
+use GrotonSchool\Slim\LTI\Domain\User\UserRepositoryInterface;
 
 class FirestoreUserRepository implements UserRepositoryInterface
 {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a20bb8a21bf2deb43780f09b3dcdee7",
+    "content-hash": "525341eedde17e83e7598d87119be773",
     "packages": [
         {
             "name": "brick/math",
@@ -564,16 +564,16 @@
         },
         {
             "name": "groton-school/slim-action",
-            "version": "2.0.1",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/lti.slim-action.git",
-                "reference": "05654b1f88ce83799054c6310267fcb565b255cb"
+                "reference": "7dbfee36c55639421f1d1184084ce83eb6f39c96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/lti.slim-action/zipball/05654b1f88ce83799054c6310267fcb565b255cb",
-                "reference": "05654b1f88ce83799054c6310267fcb565b255cb",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-action/zipball/7dbfee36c55639421f1d1184084ce83eb6f39c96",
+                "reference": "7dbfee36c55639421f1d1184084ce83eb6f39c96",
                 "shasum": ""
             },
             "require": {
@@ -584,8 +584,7 @@
                 "slim/slim": "^4.14"
             },
             "require-dev": {
-                "franzl/studio": "^0.16.0",
-                "friendsofphp/php-cs-fixer": "^3.76",
+                "friendsofphp/php-cs-fixer": "^3.85",
                 "marcocesarato/php-conventional-changelog": "^1.17"
             },
             "type": "library",
@@ -607,28 +606,28 @@
             "description": "Convenience wrapper for Slim framework actions",
             "support": {
                 "issues": "https://github.com/groton-school/lti.slim-action/issues",
-                "source": "https://github.com/groton-school/lti.slim-action/tree/v2.0.1"
+                "source": "https://github.com/groton-school/lti.slim-action/tree/dev"
             },
-            "time": "2025-07-26T22:59:20+00:00"
+            "time": "2025-08-06T12:32:09+00:00"
         },
         {
             "name": "groton-school/slim-lti-shim",
-            "version": "2.0.3",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/lti.slim-lti-shim.git",
-                "reference": "448504bd9de689d83aa47383f102c13b6743907d"
+                "reference": "b015c048f919c7381bb0d4b9a6d40cd57b892fc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-shim/zipball/448504bd9de689d83aa47383f102c13b6743907d",
-                "reference": "448504bd9de689d83aa47383f102c13b6743907d",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-shim/zipball/b015c048f919c7381bb0d4b9a6d40cd57b892fc8",
+                "reference": "b015c048f919c7381bb0d4b9a6d40cd57b892fc8",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-openssl": "*",
-                "groton-school/slim-action": "^2.0.1",
+                "groton-school/slim-action": "dev-dev",
                 "packbackbooks/lti-1p3-tool": "^6.3",
                 "php-di/php-di": "^6.0",
                 "slim/http": "^1.4",
@@ -636,7 +635,7 @@
                 "slim/slim": "^4.14"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.76",
+                "friendsofphp/php-cs-fixer": "^3.85",
                 "marcocesarato/php-conventional-changelog": "^1.17"
             },
             "type": "library",
@@ -658,9 +657,9 @@
             "description": "Shim to use packbackbooks/lti-1p3-tool in a Slim Skeleton app",
             "support": {
                 "issues": "https://github.com/groton-school/lti.slim-lti-shim/issues",
-                "source": "https://github.com/groton-school/lti.slim-lti-shim/tree/v2.0.3"
+                "source": "https://github.com/groton-school/lti.slim-lti-shim/tree/dev"
             },
-            "time": "2025-07-26T23:02:21+00:00"
+            "time": "2025-08-06T13:35:44+00:00"
         },
         {
             "name": "grpc/grpc",
@@ -5169,7 +5168,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "groton-school/slim-lti-shim": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},
