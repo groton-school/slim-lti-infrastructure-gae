@@ -1,10 +1,17 @@
 <!--- BEGIN HEADER -->
-
 # Changelog
 
 All notable changes to this project will be documented in this file.
-
 <!--- END HEADER -->
+
+## [1.1.0](https://github.com/groton-school/slim-lti-infrastructure-gae/compare/v1.0.3...v1.1.0) (2025-08-06)
+
+### Features
+
+* Store users in FireStore ([28a2b2](https://github.com/groton-school/slim-lti-infrastructure-gae/commit/28a2b236e618fa28f8cc0350d159ac37c3570bb7))
+
+
+---
 
 ## [1.0.3](https://github.com/groton-school/lti.slim-lti-infrastructure-gae/compare/v1.0.2...v1.0.3) (2025-07-26)
 
