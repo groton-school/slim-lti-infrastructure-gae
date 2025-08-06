@@ -563,71 +563,22 @@
             "time": "2025-05-28T18:52:35+00:00"
         },
         {
-            "name": "groton-school/slim-action",
-            "version": "dev-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/groton-school/lti.slim-action.git",
-                "reference": "7dbfee36c55639421f1d1184084ce83eb6f39c96"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/lti.slim-action/zipball/7dbfee36c55639421f1d1184084ce83eb6f39c96",
-                "reference": "7dbfee36c55639421f1d1184084ce83eb6f39c96",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "psr/http-message": "^2.0",
-                "psr/log": "^3.0",
-                "slim/http": "^1.4",
-                "slim/slim": "^4.14"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.85",
-                "marcocesarato/php-conventional-changelog": "^1.17"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "GrotonSchool\\Slim\\Actions\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Seth Battis",
-                    "email": "sbattis@groton.org"
-                }
-            ],
-            "description": "Convenience wrapper for Slim framework actions",
-            "support": {
-                "issues": "https://github.com/groton-school/lti.slim-action/issues",
-                "source": "https://github.com/groton-school/lti.slim-action/tree/dev"
-            },
-            "time": "2025-08-06T12:32:09+00:00"
-        },
-        {
             "name": "groton-school/slim-lti-shim",
             "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/lti.slim-lti-shim.git",
-                "reference": "b015c048f919c7381bb0d4b9a6d40cd57b892fc8"
+                "reference": "915de348765634a08efe9ccef947a5dd10992c82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-shim/zipball/b015c048f919c7381bb0d4b9a6d40cd57b892fc8",
-                "reference": "b015c048f919c7381bb0d4b9a6d40cd57b892fc8",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-shim/zipball/915de348765634a08efe9ccef947a5dd10992c82",
+                "reference": "915de348765634a08efe9ccef947a5dd10992c82",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-openssl": "*",
-                "groton-school/slim-action": "dev-dev",
                 "packbackbooks/lti-1p3-tool": "^6.3",
                 "php-di/php-di": "^6.0",
                 "slim/http": "^1.4",
@@ -659,7 +610,7 @@
                 "issues": "https://github.com/groton-school/lti.slim-lti-shim/issues",
                 "source": "https://github.com/groton-school/lti.slim-lti-shim/tree/dev"
             },
-            "time": "2025-08-06T13:35:44+00:00"
+            "time": "2025-08-06T14:29:22+00:00"
         },
         {
             "name": "grpc/grpc",
