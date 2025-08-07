@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "545b781f6632b394e6f93b54f88fc486",
+    "content-hash": "e9dfdfd80ebb50848be6ca5765e1a253",
     "packages": [
         {
             "name": "brick/math",
@@ -564,16 +564,16 @@
         },
         {
             "name": "groton-school/slim-lti-shim",
-            "version": "dev-dev",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/slim-lti-shim.git",
-                "reference": "5c38084c47fc7eda30c4469a086fdf808b66d0a1"
+                "reference": "28344e5737134ee4cf4227b4a8c25d8547f4eaaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/slim-lti-shim/zipball/5c38084c47fc7eda30c4469a086fdf808b66d0a1",
-                "reference": "5c38084c47fc7eda30c4469a086fdf808b66d0a1",
+                "url": "https://api.github.com/repos/groton-school/slim-lti-shim/zipball/28344e5737134ee4cf4227b4a8c25d8547f4eaaf",
+                "reference": "28344e5737134ee4cf4227b4a8c25d8547f4eaaf",
                 "shasum": ""
             },
             "require": {
@@ -610,9 +610,9 @@
             "description": "Shim to use packbackbooks/lti-1p3-tool in a Slim Skeleton app",
             "support": {
                 "issues": "https://github.com/groton-school/slim-lti-shim/issues",
-                "source": "https://github.com/groton-school/slim-lti-shim/tree/dev"
+                "source": "https://github.com/groton-school/slim-lti-shim/tree/v2.2.0"
             },
-            "time": "2025-08-07T15:57:23+00:00"
+            "time": "2025-08-07T16:22:37+00:00"
         },
         {
             "name": "grpc/grpc",
@@ -5081,9 +5081,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "groton-school/slim-lti-shim": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},

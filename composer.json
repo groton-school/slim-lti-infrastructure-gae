@@ -1,7 +1,7 @@
 {
   "name": "groton-school/slim-lti-infrastructure-gae",
   "description": "Shim to implement packbackbooks/lti-1p3-tool storage interfaces in Firestore",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "authors": [
     {
       "name": "Seth Battis",
@@ -13,7 +13,7 @@
   "prefer-stable": true,
   "require": {
     "google/cloud-firestore": "^1.48",
-    "groton-school/slim-lti-shim": "dev-dev",
+    "groton-school/slim-lti-shim": "^2.2.0",
     "packbackbooks/lti-1p3-tool": "^6.3"
   },
   "autoload": {
