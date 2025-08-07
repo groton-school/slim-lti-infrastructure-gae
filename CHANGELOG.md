@@ -4,6 +4,19 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.0](https://github.com/groton-school/slim-lti-infrastructure-gae/compare/v1.1.1...v2.0.0) (2025-08-07)
+
+### ⚠ BREAKING CHANGES
+
+* Clarify getDuration() as getCacheDuration() ([6891f7](https://github.com/groton-school/slim-lti-infrastructure-gae/commit/6891f74c19817991394b836c03354fb3686b6f3b))
+
+### Features
+
+* Inject dependencies with Dependencies::injec() ([6a70f2](https://github.com/groton-school/slim-lti-infrastructure-gae/commit/6a70f2dbfd6e1965ed8e2a7a89a460c610104843))
+
+
+---
+
 ## [1.1.1](https://github.com/groton-school/slim-lti-infrastructure-gae/compare/v1.1.0...v1.1.1) (2025-08-07)
 
 ### Bug Fixes
