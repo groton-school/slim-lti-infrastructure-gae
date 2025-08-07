@@ -21,7 +21,7 @@ class Cache implements CacheInterface
     public function __construct(SettingsInterface $settings)
     {
         $this->firestore = new FirestoreClient();
-        $this->duration = $settings->getDuration();
+        $this->duration = $settings->getCacheDuration();
     }
 
     public function getLaunchData(string $key): ?array
