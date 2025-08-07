@@ -6,5 +6,5 @@ namespace GrotonSchool\Slim\LTI\Infrastructure\GAE;
 
 interface SettingsInterface
 {
-    public function getDuration(): int;
+    public function getCacheDuration(): int;
 }
