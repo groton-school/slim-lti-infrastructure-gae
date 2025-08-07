@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9dfdfd80ebb50848be6ca5765e1a253",
+    "content-hash": "4afa61ef788a450da3e502ae38868d2d",
     "packages": [
         {
             "name": "brick/math",
@@ -564,7 +564,7 @@
         },
         {
             "name": "groton-school/slim-lti-shim",
-            "version": "2.2.0",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/slim-lti-shim.git",
@@ -5081,7 +5081,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "groton-school/slim-lti-shim": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},
