@@ -14,6 +14,7 @@
     "require": {
         "google/cloud-firestore": "^1.48",
         "groton-school/slim-lti-shim": "^2.3.0",
+        "groton-school/slim-norms": "^1.0",
         "packbackbooks/lti-1p3-tool": "^6.3",
         "php-di/php-di": ">=6.0"
     },

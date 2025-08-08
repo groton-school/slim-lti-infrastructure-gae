@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "49e440ecf27dce1e60d8debb08efb581",
+    "content-hash": "b7e66474999c8644ea6694388caf7d44",
     "packages": [
         {
             "name": "brick/math",
@@ -613,6 +613,53 @@
                 "source": "https://github.com/groton-school/slim-lti-shim/tree/v2.3.0"
             },
             "time": "2025-08-07T22:06:16+00:00"
+        },
+        {
+            "name": "groton-school/slim-norms",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/groton-school/slim-norms.git",
+                "reference": "e39e8e48bc6daf2afe1ee462fb27381f0befc92a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/groton-school/slim-norms/zipball/e39e8e48bc6daf2afe1ee462fb27381f0befc92a",
+                "reference": "e39e8e48bc6daf2afe1ee462fb27381f0befc92a",
+                "shasum": ""
+            },
+            "require": {
+                "php-di/php-di": ">=6.0",
+                "psr/http-message": "^2.0",
+                "slim/http": "^1.4",
+                "slim/slim": "^4.14"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.85",
+                "marcocesarato/php-conventional-changelog": "^1.17"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GrotonSchool\\Slim\\Norms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Seth Battis",
+                    "email": "sbattis@groton.org"
+                }
+            ],
+            "description": "Define some normal interfaces and abstract classes for working with the Slim Framework",
+            "support": {
+                "issues": "https://github.com/groton-school/slim-norms/issues",
+                "source": "https://github.com/groton-school/slim-norms/tree/v1.0.0"
+            },
+            "time": "2025-08-08T14:32:24+00:00"
         },
         {
             "name": "grpc/grpc",

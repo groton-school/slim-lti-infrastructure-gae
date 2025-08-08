@@ -8,10 +8,11 @@ use DI;
 use DI\ContainerBuilder;
 use GrotonSchool\Slim\LTI\Infrastructure\CacheInterface;
 use GrotonSchool\Slim\LTI\Infrastructure\DatabaseInterface;
+use GrotonSchool\Slim\Norms\DependenciesInterface;
 
-class Dependencies
+class Dependencies implements DependenciesInterface
 {
-    public static function inject(ContainerBuilder $containerBuilder)
+    public static function inject(ContainerBuilder $containerBuilder): void
     {
         $containerBuilder->addDefinitions([
             // autowire groton-school/slim-lti-shim implementations
