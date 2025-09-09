@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [3.0.0](https://github.com/groton-school/slim-lti-infrastructure-gae/compare/v2.0.1...v3.0.0) (2025-09-09)
+
+### ⚠ BREAKING CHANGES
+
+* Support constructor injection by making static members dynamic ([3294a2](https://github.com/groton-school/slim-lti-infrastructure-gae/commit/3294a282163add95ec59aadedcd622fc02839908))
+
+
+---
+
 ## [2.0.1](https://github.com/groton-school/slim-lti-infrastructure-gae/compare/v2.0.0...v2.0.1) (2025-08-13)
 
 
