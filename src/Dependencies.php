@@ -12,7 +12,7 @@ use GrotonSchool\Slim\Norms\DependenciesInterface;
 
 class Dependencies implements DependenciesInterface
 {
-    public static function inject(ContainerBuilder $containerBuilder): void
+    public function inject(ContainerBuilder $containerBuilder): void
     {
         $containerBuilder->addDefinitions([
             // autowire groton-school/slim-lti-shim implementations

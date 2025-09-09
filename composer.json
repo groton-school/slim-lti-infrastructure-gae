@@ -1,42 +1,36 @@
 {
-    "name": "groton-school/slim-lti-infrastructure-gae",
-    "description": "Shim to implement packbackbooks/lti-1p3-tool storage interfaces in Firestore",
-    "version": "2.0.1",
-    "authors": [
-        {
-            "name": "Seth Battis",
-            "email": "sbattis@groton.org"
-        }
-    ],
-    "license": "GPL-3.0",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/battis/dflydev-fig-cookies.git"
-        }
-    ],
-    "require": {
-        "google/cloud-firestore": "^1.48",
-        "groton-school/slim-lti-shim": "^3.0",
-        "groton-school/slim-norms": "^1.0",
-        "packbackbooks/lti-1p3-tool": "^6.3",
-        "php-di/php-di": "^7.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "GrotonSchool\\Slim\\LTI\\Infrastructure\\GAE\\": "src/"
-        }
-    },
-    "scripts": {
-        "release": "conventional-changelog --commit"
-    },
-    "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.76",
-        "marcocesarato/php-conventional-changelog": "^1.17"
-    },
-    "config": {
-        "sort-packages": true
+  "name": "groton-school/slim-lti-infrastructure-gae",
+  "description": "Shim to implement packbackbooks/lti-1p3-tool storage interfaces in Firestore",
+  "version": "2.0.1",
+  "authors": [
+    {
+      "name": "Seth Battis",
+      "email": "sbattis@groton.org"
     }
+  ],
+  "license": "GPL-3.0",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "google/cloud-firestore": "^1.48",
+    "groton-school/slim-lti-shim": "^4.0",
+    "groton-school/slim-norms": "^2.0",
+    "packbackbooks/lti-1p3-tool": "^6.3",
+    "php-di/php-di": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "GrotonSchool\\Slim\\LTI\\Infrastructure\\GAE\\": "src/"
+    }
+  },
+  "scripts": {
+    "release": "conventional-changelog --commit"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.76",
+    "marcocesarato/php-conventional-changelog": "^1.17"
+  },
+  "config": {
+    "sort-packages": true
+  }
 }
