@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [3.0.1](https://github.com/groton-school/slim-lti-infrastructure-gae/compare/v3.0.0...v3.0.1) (2025-09-28)
+
+### Bug Fixes
+
+* Bump dependencies ([7e7e6b](https://github.com/groton-school/slim-lti-infrastructure-gae/commit/7e7e6be9adcf6cc308d71727365d179fcf30535e))
+
+
+---
+
 ## [3.0.0](https://github.com/groton-school/slim-lti-infrastructure-gae/compare/v2.0.1...v3.0.0) (2025-09-09)
 
 ### ⚠ BREAKING CHANGES
